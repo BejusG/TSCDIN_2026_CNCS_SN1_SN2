@@ -1,0 +1,14 @@
+name: Prueba Python
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prueba-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ejecutar Python
+        run: |
+          python --version
+          python -c "print('Python funciona correctamente en GitHub Actions')"
